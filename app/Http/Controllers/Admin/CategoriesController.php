@@ -10,6 +10,10 @@ use function GuzzleHttp\Promise\all;
 
 class CategoriesController extends Controller
 {
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *

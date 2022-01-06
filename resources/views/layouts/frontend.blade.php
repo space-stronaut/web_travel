@@ -25,7 +25,10 @@
               </li>
               @guest
               <li class="nav-item">
-                  <a href="{{ route('login') }}" class=" btn btn-primary">Login</a>
+                <a href="{{ route('register') }}" class=" btn btn-outline-primary">Register</a>
+            </li>
+              <li class="nav-item">
+                  <a href="{{ route('login') }}" class="btn btn-primary ms-2">Login</a>
               </li>
               @endguest
               @auth
